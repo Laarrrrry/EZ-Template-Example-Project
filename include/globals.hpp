@@ -2,5 +2,5 @@
 
 // Motors
 
-extern pros::Motor intake11W; // Defines an intake called intake11W
-extern pros::MotorGroup intake5W;
+inline pros::Motor intake11W(1);           // uses port 1
+inline pros::MotorGroup intake5W({2, 3});  // uses port 2, 3
